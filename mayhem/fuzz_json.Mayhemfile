@@ -1,0 +1,5 @@
+project: ffs
+target: fuzz-json
+
+cmds:
+    - cmd: /fuzz_json

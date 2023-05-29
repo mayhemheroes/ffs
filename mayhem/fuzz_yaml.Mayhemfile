@@ -1,0 +1,7 @@
+project: ffs
+target: fuzz-yaml
+
+cmds:
+    - cmd: /fuzz_yaml
+
+

@@ -1,0 +1,28 @@
+[package]
+name = "fuzz-ffs"
+version = "0.0.0"
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+honggfuzz = "0.5.55"
+libc = "0.2.51"
+pkg-config = "0.3.27"
+ffs = { path = ".." }
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_json"
+path = "fuzz_targets/fuzz_json.rs"
+
+[[bin]]
+name = "fuzz_toml"
+path = "fuzz_targets/fuzz_toml.rs"
+
+[[bin]]
+name = "fuzz_yaml"
+path = "fuzz_targets/fuzz_yaml.rs"

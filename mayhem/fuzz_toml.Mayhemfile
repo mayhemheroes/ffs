@@ -1,0 +1,5 @@
+project: ffs
+target: fuzz-toml
+
+cmds:
+    - cmd: /fuzz_toml
